@@ -15,6 +15,7 @@ import html from "../imgs/html.png";
 import atlassian from "../imgs/atlassian.png";
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-masonry-css";
+import Portfolio from "./Portfolio"
 
 // import { Image } from "@mui/icons-material";
 
@@ -51,6 +52,9 @@ export default class About extends Component {
       //     text: "Atlassian",
       //   },
     ];
+    const btnClick = () => {
+        <Portfolio></Portfolio>
+    }
     const devInfo = ["React", "Github"];
     return (
       <div>
@@ -82,7 +86,7 @@ export default class About extends Component {
             }}
           >
             Passionate about the intersection between design and development
-            <Typography align="center">
+<Typography align="center">
               <Button
                 style={{
                   marginTop: "10%",
@@ -98,6 +102,9 @@ export default class About extends Component {
                   fontFamily: "Avenir",
                   letterSpacing: ".2rem",
                 }}
+                onClick={() => {
+    alert('clicked');
+  }}
               >
                 My Work
               </Button>

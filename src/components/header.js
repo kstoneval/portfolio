@@ -58,7 +58,7 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -67,8 +67,8 @@ const ResponsiveAppBar = () => {
               color="inherit"
             >
               <MenuIcon />
-            </IconButton>
-            <Menu
+            </IconButton> */}
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -91,7 +91,7 @@ const ResponsiveAppBar = () => {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
           <Typography
             color="black"
@@ -123,7 +123,7 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-
+{/* 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }}}>
           {pages.map((page) => (
               <Button
@@ -134,7 +134,7 @@ const ResponsiveAppBar = () => {
                 {page}
               </Button>
             ))}
-          </Box>
+          </Box> */}
 
 
           <Button onClick={handleOpen} style={{color: 'black', display: 'block', fontWeight: "400",fontFamily: 'Avenir', letterSpacing: '.1rem', textTransform: "none", fontSize: "19px"}}>Contact</Button>

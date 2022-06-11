@@ -12,8 +12,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Modal } from '@mui/material';
+import Contact from '../pages/Contact';
 
-const pages = ['About', 'Portfolio', 'Contact'];
+
+const pages = ['About', 'Portfolio'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,6 +28,10 @@ const ResponsiveAppBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
 
   return (
@@ -128,9 +135,36 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
+
+
+          <Button onClick={handleOpen} style={{color: 'black', display: 'block', fontWeight: "400",fontFamily: 'Avenir', letterSpacing: '.1rem', textTransform: "none", fontSize: "19px"}}>Contact</Button>
+<Modal
+  open={open}
+  onClose={handleClose}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={style}>
+<Contact></Contact>
+  </Box>
+</Modal>
+
         </Toolbar>
       </Container>
     </AppBar>
   );
 };
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 500,
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  borderRadius: 10,
+  p: 4,
+};
+
 export default ResponsiveAppBar;

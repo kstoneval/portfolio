@@ -27,7 +27,7 @@ export default class footer extends Component {
 const styles = {
     icon: {
         fontSize: "40px",
-        marginTop: -30,
-        color: "#8CB0FF",
+        marginTop: -20,
+        color: "#E6E6E6",    
     }
 }

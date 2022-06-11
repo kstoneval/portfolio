@@ -106,7 +106,7 @@ const Portfolio = ({}) => {
                 }}
               ></img>
             </CardMedia>
-            </Link>
+                      </Link>
 
             <Box
               sx={{ display: "flex", flexDirection: "column", margin: "4%" }}

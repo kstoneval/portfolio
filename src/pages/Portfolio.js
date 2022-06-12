@@ -52,7 +52,7 @@ const Portfolio = ({}) => {
           fontWeight: "500",
           fontFamily: "Avenir",
           letterSpacing: ".2rem",
-          marginTop: "10%",
+          marginTop: "5%",
         }}
       >
         My Work

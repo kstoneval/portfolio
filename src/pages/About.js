@@ -47,15 +47,8 @@ export default class About extends Component {
         img: html,
         text: "HTML",
       },
-      //   {
-      //     img: atlassian,
-      //     text: "Atlassian",
-      //   },
     ];
-    const btnClick = () => {
-        <Portfolio></Portfolio>
-    }
-    const devInfo = ["React", "Github"];
+    
     return (
       <div>
         <div
@@ -82,11 +75,16 @@ export default class About extends Component {
               flexDirection: "column",
               justifyContent: "center",
               maxWidth: 600,
-              //   marginTop: 40,
             }}
           >
             Passionate about the intersection between design and development
+
 <Typography align="center">
+<a href="https://docs.google.com/document/d/1yG-KM8P53XoFjifVBGUsLYk9Td4qrmLo2lMX8AK0R5s/edit#heading=h.gdydvfgitvot"  style={{
+                  textDecoration: 'none',
+                  textTransform: "none",
+
+                }}>
               <Button
                 style={{
                   marginTop: "10%",
@@ -101,13 +99,14 @@ export default class About extends Component {
                   fontWeight: "500",
                   fontFamily: "Avenir",
                   letterSpacing: ".2rem",
+                  textDecoration: 'none',
+                  textTransform: "none",
+
                 }}
-                onClick={() => {
-    alert('clicked');
-  }}
               >
-                My Work
+                My Resume
               </Button>
+              </a>
             </Typography>
           </p>
           <img

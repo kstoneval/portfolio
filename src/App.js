@@ -8,19 +8,19 @@ import ResponsiveAppBar from "./components/header";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/footer";
-
+import { BrowserRouter as Router, Switch, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 // import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter> */}
-        <ResponsiveAppBar />
-        <About></About>
-        <Portfolio></Portfolio>
-        {/* <Contact></Contact> */}
-        <Footer></Footer>
-      {/* </BrowserRouter> */}
+            <ResponsiveAppBar />
+      <Routes>
+        <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} /> 
+      </Routes>
+    <Footer></Footer>
     </div>
   );
 }
